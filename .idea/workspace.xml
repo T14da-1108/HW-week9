@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4aa0e18-5d65-460f-ae7c-973650d40ddd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/tasks/count_util/count_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/count_util/count_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/count_util/test_public.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/count_util/test_public.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/file_fun/file_fun.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/file_fun/file_fun.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/file_fun/test_public.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/file_fun/test_public.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/input_/input_.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/input_/input_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/json_to_csv/json_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/json_to_csv/json_to_csv.py" afterDir="false" />
-    </list>
+    <list default="true" id="b4aa0e18-5d65-460f-ae7c-973650d40ddd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

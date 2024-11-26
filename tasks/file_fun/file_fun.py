@@ -16,6 +16,7 @@ def first_n_lines(filename: str, n: int) -> List[str]:
     except StopIteration:
         return lines
 
+
 def last_n_lines(filename: str, n: int) -> List[str]:
     if n < 0:
         raise ValueError("Number of lines to read must be non-negative.")
@@ -28,6 +29,7 @@ def last_n_lines(filename: str, n: int) -> List[str]:
         raise FileNotFoundError(f"The file '{filename}' does not exist.")
     except IOError:
         raise IOError(f"The file '{filename}' could not be read.")
+
 
 def append_text(filename: str, text: str) -> None:
     try:

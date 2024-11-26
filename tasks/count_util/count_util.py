@@ -20,4 +20,3 @@ def count_util(text: str, flags: str | None = None) -> dict[str, int]:
         result["longest_line"] = max((len(line) for line in lines), default=0)
 
     return result
-
