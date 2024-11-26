@@ -53,4 +53,3 @@ def test_append_text(
     with open(temp_file, "r") as f:
         final_content = f.readlines()
     assert final_content == expected_final_content
-

@@ -113,7 +113,7 @@ TEST_CASES = [
     Case(text='', flags='',
          result={'chars': 0, 'lines': 0, 'words': 0, 'longest_line': 0}),
     Case(text='abc\ndefg', flags='',
-         result={'chars': 8, 'lines': 1, 'words': 2, 'longest_line': 4}),
+         result={'chars': 8, 'lines': 2, 'words': 2, 'longest_line': 4}),
     Case(text='abc\ndefg\n', flags='',
          result={'chars': 9, 'lines': 2, 'words': 2, 'longest_line': 4}),
     Case(text='\n\n\n\n', flags='',

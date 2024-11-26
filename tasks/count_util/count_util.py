@@ -1,21 +1,23 @@
-
-
 def count_util(text: str, flags: str | None = None) -> dict[str, int]:
-    """
-    :param text: text to count entities
-    :param flags: flags in command-like format - can be:
-        * -m stands for counting characters
-        * -l stands for counting lines
-        * -L stands for getting length of the longest line
-        * -w stands for counting words
-    More than one flag can be passed at the same time, for example:
-        * "-l -m"
-        * "-lLw"
-    Ommiting flags or passing empty string is equivalent to "-mlLw"
-    :return: mapping from string keys to corresponding counter, where
-    keys are selected according to the received flags:
-        * "chars" - amount of characters
-        * "lines" - amount of lines
-        * "longest_line" - the longest line length
-        * "words" - amount of words
-    """
+    if not flags:
+        flags = "-m -l -L -w"
+
+    active_flags = set(flags.replace("-", "").replace(" ", ""))
+    result = {}
+
+    lines = text.splitlines()
+
+    if "l" in active_flags:
+        result["lines"] = len(lines) if text else 0
+
+    if "m" in active_flags:
+        result["chars"] = len(text)
+
+    if "w" in active_flags:
+        result["words"] = sum(len(line.split()) for line in lines)
+
+    if "L" in active_flags:
+        result["longest_line"] = max((len(line) for line in lines), default=0)
+
+    return result
+
